@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3{
+    color: black;
+    margin-bottom: 15px;
+}
+p{
+    color: black;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.topnav{
+    overflow: hidden;
+    background: #333;
+    position: relative;
+    display: none;
+}
+.topnav #mylinks{
+    display: none;
+}
+.topnav a{
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+.topnav a:hover{
+    background: #ddd;
+    color: #000;
+}
+.topnav a.icon{
+    position: absolute;
+    display: block;
+    background: red;
+    top: 0;
+    right: 0;
+}
+nav{
+    background: #333;
+    padding: 20px 0;
+}
+nav a{
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover{
+    border-bottom: 1px solid #ccc;
+}
+header{
+    height: 350px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+header p{
+    margin: 10px 0;
+    color: #fff !important;
+}
+header h1{
+    color: white !important;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 12px 40px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+header a:hover{
+    transform: scale(0.7);
+    transition: 1.5s;
+    border: 1px solid maroon;
+}
+.content{
+    display: flex;
+}
+.content .col1{
+    width: 50%;
+    height: 350px;
+    padding: 60px;
+}
+.content .col1 h2{
+    color: black !important;
+    margin-bottom: 15px;
+}
+.content .col1 p{
+    color: black !important;
+    line-height: 1.3;
+}
+.content .col2{
+    width: 50%;
+    height: 350px;
+    background: url('../img/3.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 45px;
+}
+section{
+    padding: 50px;
+    background: #ddd;
+}
+section p{
+    color:black !important;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.services .card{
+    width: 32%;
+    height: 300px;
+}
+.services .fa-cog, .fa-globe, .fa-code{
+    font-size: 50px;
+    color: black;
+}
+.services h2{
+    color: black !important;
+    margin-top: 10px;
+}
+.services p{
+    color: black !important;
+}
+footer{
+    height: 600px;
+    background: black;
+    padding: 50px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 20px;
+}
+footer p{
+    color:white !important;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+footer .socials{
+    margin-top: 40px;
+}
+footer h3{
+    color: sandybrown;
+    font-weight: bold;
+    /* font-size: 35px; */
+}
+footer .copy{
+    margin-top: 30px;
+}
+footer .copy p{
+    text-align: center;
+    font-weight: bold;
+}
+form{
+    width: 350px;
+    height: 370px;
+    padding: 30px;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/builder.png');
+    background-position: center;
+    background-size: cover;
+    margin: 150px auto;
+}
+input{
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 8px;
+    font-size: 18px;
+ 
+}
+input[type=submit]{
+    background: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+input[type=submit]{
+    background: #333;
+}
+
+/* end of navigatios */
+@media screen and (max-width:600px){
+    .topnav{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .col1{
+        width: 100%;
+        padding: 30px;
+        height: 400px;
+    }
+    .content .col2{
+        width: 150%;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .card{
+        width: 100%
+    }
+    footer{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+
+    
+}
